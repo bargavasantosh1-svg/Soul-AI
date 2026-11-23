@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SOUL</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <div class="app">
+
+    <header class="topbar">
+      <div class="brand">
+        <span id="status-light" class="status-light checking"></span>
+        <h1>SOUL</h1>
+        <span id="status-text" class="status-text">Checking...</span>
+      </div>
+      <div class="topbar-actions">
+        <button id="voice-btn" class="btn-secondary" type="button">Voice: On</button>
+        <button id="new-chat-btn" class="btn-secondary" type="button">New chat</button>
+      </div>
+    </header>
+
+    <main id="messages" class="messages" aria-live="polite">
+      <div class="message assistant">
+        <div class="bubble">Hello Bargav. I am SOUL. How can I help you?</div>
+      </div>
+    </main>
+
+    <div id="error-box" class="error-box hidden"></div>
+
+    <form id="chat-form" class="composer" autocomplete="off">
+      <button id="mic-btn" class="btn-mic" type="button" title="Click to talk to SOUL">Mic</button>
+      <input
+        id="message-input"
+        class="message-input"
+        type="text"
+        placeholder="Type a message to SOUL..."
+        maxlength="4000"
+        autofocus
+      >
+      <button id="send-btn" class="btn-primary" type="submit">Send</button>
+    </form>
+
+  </div>
+
+  <script src="/static/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+# Secrets (NEVER upload these)
+.env
+*.key
+*.pem
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Logs and temporary files
+logs/
+*.log
+wakeword_selftest.py
+
+# Backups and downloaded models
+backups/
+*.mp3
+*.onnx
+*.tflite
+
+# Editor and system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Android build files (later)
+android/**/build/
+android/.gradle/
+android/local.properties
